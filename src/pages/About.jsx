@@ -4,6 +4,7 @@ import { Card } from '../components/core/Card.jsx';
 import { Icon } from '../components/core/Icon.jsx';
 import { ScriptQuote } from '../components/brand/ScriptQuote.jsx';
 import { PatternPanel } from '../components/brand/PatternPanel.jsx';
+import { asset } from '../lib/asset.js';
 
 export default function About() {
   return (
@@ -17,7 +18,7 @@ export default function About() {
           <ScriptQuote size="md" align="left" quotes={false}>hecho especialmente para esa persona</ScriptQuote>
         </div>
         <div style={{ borderRadius: 'var(--radius-image)', overflow: 'hidden', boxShadow: 'var(--shadow-photo)' }}>
-          <img src="/assets/photos/raspberry-cake-side.png" alt="Taller" style={{ width: '100%', display: 'block' }} />
+          <img src={asset('/assets/photos/raspberry-cake-side.png')} alt="Taller" style={{ width: '100%', display: 'block' }} />
         </div>
       </div>
       <PatternPanel ground="parchment" scale={300} opacity={0.14}>

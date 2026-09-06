@@ -9,6 +9,7 @@ import { ScriptQuote } from '../components/brand/ScriptQuote.jsx';
 import { PatternPanel } from '../components/brand/PatternPanel.jsx';
 import { OrnamentDivider } from '../components/brand/OrnamentDivider.jsx';
 import { CAKES } from '../data/cakes.js';
+import { asset } from '../lib/asset.js';
 
 function Hero() {
   const navigate = useNavigate();
@@ -30,7 +31,7 @@ function Hero() {
           </div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
-          <img src="/assets/photos/raspberry-cake-cropped.png" alt="Raspberry Velvet" style={{ width: '100%', maxWidth: 520, display: 'block' }} />
+          <img src={asset('/assets/photos/raspberry-cake-cropped.png')} alt="Raspberry Velvet" style={{ width: '100%', maxWidth: 520, display: 'block' }} />
         </div>
       </div>
     </section>

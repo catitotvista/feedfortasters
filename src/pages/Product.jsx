@@ -9,6 +9,7 @@ import { OrnamentDivider } from '../components/brand/OrnamentDivider.jsx';
 import { Select } from '../components/forms/Select.jsx';
 import { Radio } from '../components/forms/Radio.jsx';
 import { useToast } from '../context/ToastContext.jsx';
+import { asset } from '../lib/asset.js';
 
 export default function Product() {
   const navigate = useNavigate();
@@ -20,12 +21,12 @@ export default function Product() {
     <div style={{ maxWidth: 'var(--content-max)', margin: '0 auto', padding: 'var(--space-16) var(--gutter-inline)', display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,1fr)', gap: 'var(--space-16)', alignItems: 'start' }}>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
         <div style={{ borderRadius: 'var(--radius-image)', overflow: 'hidden', background: 'var(--gradient-crimson-vignette)', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', boxShadow: 'var(--shadow-photo)' }}>
-          <img src="/assets/photos/raspberry-cake-cropped.png" alt="The Raspberry Velvet" style={{ width: '100%', display: 'block' }} />
+          <img src={asset('/assets/photos/raspberry-cake-cropped.png')} alt="The Raspberry Velvet" style={{ width: '100%', display: 'block' }} />
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 'var(--space-3)' }}>
           {['raspberry-cake.png', 'raspberry-cake-side.png', 'raspberry-cake-side-cropped.png'].map((p, i) => (
             <div key={p} style={{ borderRadius: 'var(--radius-md)', overflow: 'hidden', aspectRatio: '1', border: i === 0 ? '1.5px solid var(--ff-crimson-600)' : '1px solid var(--border-hairline)' }}>
-              <img src={'/assets/photos/' + p} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+              <img src={asset('/assets/photos/' + p)} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
             </div>
           ))}
         </div>

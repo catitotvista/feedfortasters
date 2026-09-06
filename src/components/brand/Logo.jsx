@@ -10,7 +10,7 @@ const SOURCES = {
   'monogram-pearl-on-crimson': 'assets/logos/monogram-pearl-on-crimson.svg'
 };
 
-export function Logo({ variant = 'horizontal', height = 48, basePath = '/', tone, style, ...rest }) {
+export function Logo({ variant = 'horizontal', height = 48, basePath = import.meta.env.BASE_URL, tone, style, ...rest }) {
   const src = (basePath || '') + (SOURCES[variant] || SOURCES.horizontal);
   const filter = tone === 'parchment'
     ? 'brightness(0) saturate(100%) invert(96%) sepia(6%) saturate(180%) hue-rotate(4deg) brightness(103%)'

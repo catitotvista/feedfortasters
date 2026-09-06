@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function Monogram({ size = 64, ground = 'none', basePath = '/', style, ...rest }) {
+export function Monogram({ size = 64, ground = 'none', basePath = import.meta.env.BASE_URL, style, ...rest }) {
   const grounds = {
     none: { background: 'transparent', padding: 0, borderRadius: 0, border: 'none' },
     crimson: { background: 'var(--ff-crimson-600)', padding: size * 0.22, borderRadius: '999px', border: 'none' },

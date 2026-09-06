@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function OrnamentDivider({ tone = 'camel', basePath = '/', style, ...rest }) {
+export function OrnamentDivider({ tone = 'camel', basePath = import.meta.env.BASE_URL, style, ...rest }) {
   const color = tone === 'crimson' ? 'var(--ff-crimson-600)' : tone === 'parchment' ? 'var(--ff-parchment-300)' : 'var(--ff-camel-500)';
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-4)', ...style }} {...rest}>

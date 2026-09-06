@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function PatternPanel({ children, ground = 'parchment', scale = 320, opacity = 0.18, radius = 'var(--radius-card)', basePath = '/', style, ...rest }) {
+export function PatternPanel({ children, ground = 'parchment', scale = 320, opacity = 0.18, radius = 'var(--radius-card)', basePath = import.meta.env.BASE_URL, style, ...rest }) {
   const grounds = { parchment: 'var(--ff-parchment-100)', crimson: 'var(--ff-crimson-600)', onyx: 'var(--ff-onyx)', white: 'var(--ff-white)' };
   const invert = ground === 'crimson' || ground === 'onyx';
   return (
