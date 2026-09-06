@@ -1,0 +1,65 @@
+:root{
+  /* Las tres familias son las reales, autohospedadas en fonts/.
+     El segundo tipo de cada stack cubre los acentos que faltan en los
+     archivos Trial/DEMO de Tartuffo y Noyh (ver tokens/fonts.css). */
+  /* Tartuffo Light SIEMPRE en MAYÚSCULAS — nunca en caja baja ni Title Case. */
+  --font-display:"Tartuffo","Playfair Display",Georgia,serif;   /* Títulos */
+  --font-body:"Noyh","Jost","Futura",system-ui,sans-serif;      /* Cuerpo */
+  --font-script:"Loverine",cursive;                             /* Quotes (con acentos) */
+  --font-serif-display:var(--font-display);
+  --font-sans:var(--font-body);
+
+  /* Display scale — editorial, set tight */
+  --text-display-2xl:clamp(64px,9vw,132px);
+  --text-display-xl:clamp(48px,6.5vw,92px);
+  --text-display-lg:clamp(38px,4.6vw,64px);
+  --text-display-md:44px;
+  --text-display-sm:32px;
+
+  /* Headings & body */
+  --text-h1:40px;
+  --text-h2:30px;
+  --text-h3:23px;
+  --text-h4:19px;
+  --text-lg:18px;
+  --text-md:16px;
+  --text-sm:14px;
+  --text-xs:12.5px;
+  --text-eyebrow:11.5px;
+
+  /* Script */
+  --text-script-lg:64px;
+  --text-script-md:40px;
+  --text-script-sm:28px;
+  --text-script-xs:20px;   /* bajada dentro de tarjetas */
+
+  --leading-display:0.94;
+  --leading-tight:1.12;
+  --leading-heading:1.2;
+  --leading-body:1.62;
+  --leading-loose:1.8;
+
+  --tracking-display:-0.02em;
+  --tracking-tight:-0.01em;
+  --tracking-normal:0em;
+  --tracking-wide:0.06em;
+  --tracking-eyebrow:0.22em;
+  --tracking-display-caps:0.03em;   /* el display va en caps: tracking positivo, nunca negativo */
+
+  --weight-light:300;
+  --weight-regular:400;
+  --weight-medium:500;
+  --weight-semibold:600;
+  --weight-bold:700;
+
+  /* Semantic type roles */
+  --type-hero-family:var(--font-display);
+  --type-hero-weight:var(--weight-light);
+  --type-hero-transform:uppercase;
+  --type-hero-tracking:var(--tracking-display-caps);
+  --type-body-family:var(--font-body);
+  --type-body-weight:var(--weight-regular);
+  --type-eyebrow-family:var(--font-body);
+  --type-eyebrow-weight:var(--weight-medium);
+  --type-quote-family:var(--font-script);
+}

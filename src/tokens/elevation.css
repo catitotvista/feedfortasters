@@ -1,0 +1,13 @@
+:root{
+  /* Shadows are warm and low — never grey/blue drop shadows */
+  --shadow-none:none;
+  --shadow-xs:0 1px 2px rgba(22,22,22,.05);
+  --shadow-sm:0 2px 8px rgba(78,15,16,.06);
+  --shadow-md:0 8px 24px rgba(78,15,16,.09);
+  --shadow-lg:0 18px 48px rgba(78,15,16,.13);
+  --shadow-photo:0 24px 60px rgba(78,15,16,.22);
+  --shadow-inset-hairline:inset 0 0 0 1px var(--border-hairline);
+  --ring-focus:0 0 0 3px rgba(179,143,111,.45);
+  --border-width-hairline:1px;
+  --border-width-strong:1.5px;
+}

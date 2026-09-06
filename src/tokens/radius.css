@@ -1,0 +1,15 @@
+:root{
+  --radius-none:0px;
+  --radius-xs:4px;
+  --radius-sm:8px;
+  --radius-md:14px;
+  --radius-lg:22px;
+  --radius-xl:32px;
+  --radius-pill:999px;
+  /* Organic, hand-cut shapes — the brand's "marco" language */
+  --radius-blob:56% 44% 52% 48% / 48% 52% 48% 52%;
+  --radius-arch:var(--radius-pill) var(--radius-pill) var(--radius-md) var(--radius-md);
+  --radius-card:var(--radius-md);
+  --radius-control:var(--radius-pill);
+  --radius-image:var(--radius-lg);
+}

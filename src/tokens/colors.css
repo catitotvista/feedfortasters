@@ -1,0 +1,87 @@
+:root{
+  /* ---- Brand core (from "Nueva Identidad Feed for Tasters", p.3) ---- */
+  --ff-crimson:#981E20;      /* Deep Crimson — the brand's signature */
+  --ff-parchment:#F2EFE8;    /* Parchment — the default page ground */
+  --ff-onyx:#161616;         /* Onyx — text and deep contrast */
+  --ff-camel:#B38F6F;        /* Camel — warm metallic accent */
+
+  /* ---- Crimson ramp (derived, for states and depth) ---- */
+  --ff-crimson-900:#4E0F10;
+  --ff-crimson-800:#6B1516;
+  --ff-crimson-700:#7C181A;
+  --ff-crimson-600:#981E20;
+  --ff-crimson-500:#B33234;
+  --ff-crimson-300:#D98B8C;
+  --ff-crimson-100:#F0D6D6;
+  --ff-crimson-050:#FAEDED;
+
+  /* ---- Camel ramp ---- */
+  --ff-camel-700:#7E6247;
+  --ff-camel-600:#967554;
+  --ff-camel-500:#B38F6F;
+  --ff-camel-300:#D2BBA3;
+  --ff-camel-100:#EADFD2;
+
+  /* ---- Neutral / parchment ramp ---- */
+  --ff-white:#FFFFFF;
+  --ff-parchment-050:#FAF8F4;
+  --ff-parchment-100:#F2EFE8;
+  --ff-parchment-200:#E7E2D8;
+  --ff-parchment-300:#D6CFC2;
+  --ff-ink-400:#8C8880;
+  --ff-ink-600:#5A5650;
+  --ff-ink-800:#2A2825;
+  --ff-ink-900:#161616;
+
+  /* ---- Semantic surfaces ---- */
+  --surface-page:var(--ff-parchment-100);
+  --surface-card:var(--ff-parchment-050);
+  --surface-raised:var(--ff-white);
+  --surface-inverse:var(--ff-crimson-600);
+  --surface-onyx:var(--ff-onyx);       /* uso excepcional: ~5% máximo */
+  --surface-dark:var(--ff-crimson-900); /* la banda oscura por defecto */
+  --surface-subtle:var(--ff-parchment-200);
+  --surface-accent-soft:var(--ff-crimson-050);
+
+  /* ---- Semantic text ---- */
+  /* Onyx es un color de excepción: máximo ~5% de cualquier composición, y solo
+     cuando el contraste lo exige. El "negro" por defecto es ink-800, cálido. */
+  --text-body:var(--ff-ink-800);
+  --text-heading:var(--ff-crimson-600);   /* títulos display sobre parchment */
+  --text-subtitle:var(--ff-onyx);         /* bajada en script: onyx, un paso más pequeña */
+  --text-muted:var(--ff-ink-600);
+  --text-faint:var(--ff-ink-400);
+  --text-accent:var(--ff-crimson-600);
+  --text-on-crimson:var(--ff-parchment-100);
+  --text-on-onyx:var(--ff-parchment-100);
+  --text-camel:var(--ff-camel-700);
+
+  /* ---- Lines & borders ---- */
+  --border-hairline:var(--ff-parchment-300);
+  --border-strong:var(--ff-ink-800);
+  --border-accent:var(--ff-crimson-600);
+  --border-camel:var(--ff-camel-500);
+
+  /* ---- Interactive ---- */
+  --action-primary:var(--ff-crimson-600);
+  --action-primary-hover:var(--ff-crimson-700);
+  --action-primary-active:var(--ff-crimson-800);
+  --action-secondary:transparent;
+  --action-secondary-hover:var(--ff-crimson-050);
+  --focus-ring:var(--ff-camel-500);
+
+  /* ---- Status (kept warm; never neon) ---- */
+  --status-success:#4F6B43;
+  --status-success-soft:#E7EDE2;
+  --status-warning:#C08A2E;
+  --status-warning-soft:#F6EBD6;
+  --status-danger:var(--ff-crimson-600);
+  --status-danger-soft:var(--ff-crimson-050);
+  --status-info:var(--ff-camel-700);
+  --status-info-soft:var(--ff-camel-100);
+
+  /* ---- Signature gradients (the social-post crimson vignette) ---- */
+  --gradient-crimson-vignette:radial-gradient(120% 90% at 50% 38%, #B0292B 0%, #981E20 42%, #6B1516 100%); /* @kind color */
+  --gradient-parchment-warm:radial-gradient(120% 100% at 50% 0%, #FAF8F4 0%, #F2EFE8 60%, #E7E2D8 100%); /* @kind color */
+  --gradient-photo-protect:linear-gradient(180deg, rgba(22,22,22,0) 40%, rgba(22,22,22,.55) 100%); /* @kind color */
+}
