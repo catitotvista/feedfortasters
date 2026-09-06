@@ -1,6 +1,6 @@
 # Feed for Tasters — sitio web
 
-Sitio de marketing de Feed for Tasters (cakes personalizados, Barranquilla), construido con React + Vite + React Router a partir del design system de la marca (tokens, tipografía autohospedada, componentes y assets reales — sin recrear nada a mano).
+Sitio de marketing de Feed for Tasters (cakes personalizados, Barranquilla), construido con React + Vite + React Router a partir del design system de la marca (tokens, tipografía, componentes y assets reales — sin recrear nada a mano).
 
 ## Páginas
 
@@ -13,7 +13,6 @@ Sitio de marketing de Feed for Tasters (cakes personalizados, Barranquilla), con
 ## Estructura
 
 - `src/tokens/` — tokens de marca (color, tipografía, espaciado, radios, sombra, movimiento) copiados 1:1 del design system.
-- `src/fonts/` — Tartuffo, Noyh y Loverine autohospedadas.
 - `src/components/` — primitivos de UI (`brand/`, `core/`, `forms/`, `feedback/`, `navigation/`), portados sin cambios del design system.
 - `src/layout/` — header y footer del sitio.
 - `src/pages/` — las 5 pantallas.
@@ -26,6 +25,12 @@ npm install
 npm run dev
 ```
 
-## Nota sobre las fuentes
+## Tipografía
 
-Tartuffo (Trial) y Noyh (DEMO) no incluyen á é í ó ú ñ — el stack cae a Playfair Display / Jost (Google Fonts) para esos glifos. Cuando lleguen los OTF licenciados con juego de caracteres completo, basta con reemplazar los archivos en `src/fonts/` con el mismo nombre.
+Familias de licencia libre, servidas desde Google Fonts (`tokens/fonts.css`) — sin costo de licencia y con el juego de caracteres Latin Extended completo (á é í ó ú ñ de fábrica):
+
+| Uso | Familia | Antes |
+|---|---|---|
+| Títulos (`--font-display`) | [Fraunces](https://fonts.google.com/specimen/Fraunces) | Tartuffo |
+| Cuerpo (`--font-body`) | [Jost](https://fonts.google.com/specimen/Jost) | Noyh |
+| Quotes (`--font-script`) | [Sacramento](https://fonts.google.com/specimen/Sacramento) | Loverine |

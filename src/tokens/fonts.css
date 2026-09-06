@@ -1,42 +1,7 @@
-/* Feed for Tasters webfonts — las tres familias de marca, autohospedadas.
-   Tartuffo (títulos, Light 300) · Noyh Geometric (cuerpo, Regular 400) · Loverine (quotes).
+/* Feed for Tasters webfonts — de licencia libre, servidas desde Google Fonts.
+   Fraunces (títulos, reemplaza a Tartuffo) · Jost (cuerpo, reemplaza a Noyh) ·
+   Sacramento (quotes, reemplaza a Loverine).
 
-   ⚠ LIMITACIÓN DE LOS ARCHIVOS ACTUALES: Tartuffo Trial y Noyh DEMO traen solo
-   Latin básico — NO tienen á é í ó ú ñ. En español esos glifos caen al siguiente
-   tipo del stack. Loverine sí trae acentos.
-   Mientras lleguen los OTF licenciados con juego completo, el stack lleva
-   Playfair Display (display) y Jost (cuerpo) como respaldo de acentos: se parecen
-   en proporción y evitan que el fallback sea la fuente del sistema. */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Jost:ital,wght@0,300..700;1,300..700&display=swap");
-
-@font-face{font-family:"Tartuffo";src:url("../fonts/Tartuffo_Trial-Thin-BF643371db08833.otf") format("opentype");font-weight:100;font-style:normal;font-display:swap}
-@font-face{font-family:"Tartuffo";src:url("../fonts/Tartuffo_Trial-ThinItalic-BF643371db0d546.otf") format("opentype");font-weight:100;font-style:italic;font-display:swap}
-@font-face{font-family:"Tartuffo";src:url("../fonts/Tartuffo_Trial-Light-BF643371daf1e86.otf") format("opentype");font-weight:300;font-style:normal;font-display:swap}
-@font-face{font-family:"Tartuffo";src:url("../fonts/Tartuffo_Trial-LightItalic-BF643371da383c5.otf") format("opentype");font-weight:300;font-style:italic;font-display:swap}
-@font-face{font-family:"Tartuffo";src:url("../fonts/Tartuffo_Trial-Regular-BF643371db1355b.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Tartuffo";src:url("../fonts/Tartuffo_Trial-RegularItalic-BF643371dadcd03.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
-@font-face{font-family:"Tartuffo";src:url("../fonts/Tartuffo_Trial-Medium-BF643371daee2ec.otf") format("opentype");font-weight:500;font-style:normal;font-display:swap}
-@font-face{font-family:"Tartuffo";src:url("../fonts/Tartuffo_Trial-MediumItalic-BF643371da36ab4.otf") format("opentype");font-weight:500;font-style:italic;font-display:swap}
-@font-face{font-family:"Tartuffo";src:url("../fonts/Tartuffo_Trial-Bold-BF643371dae156a.otf") format("opentype");font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:"Tartuffo";src:url("../fonts/Tartuffo_Trial-BoldItalic-BF643371dae73b0.otf") format("opentype");font-weight:700;font-style:italic;font-display:swap}
-
-@font-face{font-family:"Noyh";src:url("../fonts/NoyhGeometric-Thin.otf") format("opentype");font-weight:100;font-style:normal;font-display:swap}
-@font-face{font-family:"Noyh";src:url("../fonts/NoyhGeometric-ThinItalic.otf") format("opentype");font-weight:100;font-style:italic;font-display:swap}
-@font-face{font-family:"Noyh";src:url("../fonts/NoyhGeometric-ExtraLight.otf") format("opentype");font-weight:200;font-style:normal;font-display:swap}
-@font-face{font-family:"Noyh";src:url("../fonts/NoyhGeometric-ExtraLightItalic.otf") format("opentype");font-weight:200;font-style:italic;font-display:swap}
-@font-face{font-family:"Noyh";src:url("../fonts/NoyhGeometric-Light.otf") format("opentype");font-weight:300;font-style:normal;font-display:swap}
-@font-face{font-family:"Noyh";src:url("../fonts/NoyhGeometric-LightItalic.otf") format("opentype");font-weight:300;font-style:italic;font-display:swap}
-@font-face{font-family:"Noyh";src:url("../fonts/NoyhGeometric-SemiLight.otf") format("opentype");font-weight:350;font-style:normal;font-display:swap}
-@font-face{font-family:"Noyh";src:url("../fonts/NoyhGeometric-SemiLightItalic.otf") format("opentype");font-weight:350;font-style:italic;font-display:swap}
-@font-face{font-family:"Noyh";src:url("../fonts/NoyhGeometric-Regular.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Noyh";src:url("../fonts/NoyhGeometric-Italic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
-@font-face{font-family:"Noyh";src:url("../fonts/NoyhGeometric-Medium.otf") format("opentype");font-weight:500;font-style:normal;font-display:swap}
-@font-face{font-family:"Noyh";src:url("../fonts/NoyhGeometric-MediumItalic.otf") format("opentype");font-weight:500;font-style:italic;font-display:swap}
-@font-face{font-family:"Noyh";src:url("../fonts/NoyhGeometric-Bold.otf") format("opentype");font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:"Noyh";src:url("../fonts/NoyhGeometric-BoldItalic.otf") format("opentype");font-weight:700;font-style:italic;font-display:swap}
-@font-face{font-family:"Noyh";src:url("../fonts/NoyhGeometric-Heavy.otf") format("opentype");font-weight:800;font-style:normal;font-display:swap}
-@font-face{font-family:"Noyh";src:url("../fonts/NoyhGeometric-HeavyItalic.otf") format("opentype");font-weight:800;font-style:italic;font-display:swap}
-@font-face{font-family:"Noyh";src:url("../fonts/NoyhGeometric-Black.otf") format("opentype");font-weight:900;font-style:normal;font-display:swap}
-@font-face{font-family:"Noyh";src:url("../fonts/NoyhGeometric-BlackItalic.otf") format("opentype");font-weight:900;font-style:italic;font-display:swap}
-
-@font-face{font-family:"Loverine";src:url("../fonts/Loverine-Regular.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+   Las tres traen el juego de caracteres Latin Extended completo — á é í ó ú ñ
+   se ven bien de fábrica, sin fuentes de respaldo para acentos. */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Jost:ital,wght@0,300..700;1,300..700&family=Sacramento&display=swap");

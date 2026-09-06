@@ -1,11 +1,10 @@
 :root{
-  /* Las tres familias son las reales, autohospedadas en fonts/.
-     El segundo tipo de cada stack cubre los acentos que faltan en los
-     archivos Trial/DEMO de Tartuffo y Noyh (ver tokens/fonts.css). */
-  /* Tartuffo Light SIEMPRE en MAYÚSCULAS — nunca en caja baja ni Title Case. */
-  --font-display:"Tartuffo","Playfair Display",Georgia,serif;   /* Títulos */
-  --font-body:"Noyh","Jost","Futura",system-ui,sans-serif;      /* Cuerpo */
-  --font-script:"Loverine",cursive;                             /* Quotes (con acentos) */
+  /* Las tres familias son de licencia libre, servidas desde Google Fonts
+     (ver tokens/fonts.css) — reemplazan a Tartuffo/Noyh/Loverine. */
+  /* El display va SIEMPRE en MAYÚSCULAS — nunca en caja baja ni Title Case. */
+  --font-display:"Fraunces",Georgia,serif;         /* Títulos — antes Tartuffo */
+  --font-body:"Jost",system-ui,sans-serif;         /* Cuerpo — antes Noyh */
+  --font-script:"Sacramento",cursive;              /* Quotes — antes Loverine */
   --font-serif-display:var(--font-display);
   --font-sans:var(--font-body);
 
